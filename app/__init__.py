@@ -10,9 +10,9 @@ def create_app(config_class=Config):
     with app.app_context():
 
         from app.main import bp as main_bp
-        from app.game import bp as game_bp
+        from app.minesweeper import bp as minesweeper_bp
 
         app.register_blueprint(main_bp)
-        app.register_blueprint(game_bp, url_prefix="/game")
+        app.register_blueprint(minesweeper_bp, url_prefix="/minesweeper")
 
         return app

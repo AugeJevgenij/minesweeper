@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% set active_page = "minesweeper" %}
+
+{% block content%}
+
+
+<script src="{{url_for('static', filename='js/minesweeper.js', ms_version='0.0.1')}}"></script>
+
+{% endblock %}
