@@ -11,6 +11,8 @@
                     href="{{ url_for('main.home') }}">Home</a>
                 <a class="nav-link {{ 'active' if active_page == 'minesweeper' else '' }}"
                     href="{{ url_for('minesweeper.game') }}">Minesweeper</a>
+                <a class="nav-link {{ 'active' if active_page == '2028' else '' }}"
+                    href="{{ url_for('_2028.game') }}">2028</a>
             </div>
         </div>
     </div>
